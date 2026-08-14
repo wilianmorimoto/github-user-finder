@@ -1,65 +1,75 @@
 # GitHub Finder
+Busca de perfis e repositórios de usuários do GitHub via API.
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Deployed_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-Uma aplicação web para busca de perfis de usuários do GitHub e visualização de seus repositórios públicos, consumindo a API oficial do GitHub.
+[Ver projeto →]([URL_DO_PROJETO])
 
-## 🚀 Tecnologias
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wilian-morimoto/github-finder)
 
-- **Frontend:** React 18
-- **Linguagem:** TypeScript
-- **Build Tool:** Vite
-- **Roteamento:** React Router DOM
-- **Estilização:** CSS Modules
-- **Ícones:** React Icons
+---
 
-## ✨ Funcionalidades
+### 📸 Screenshot
+*(Adicione aqui um screenshot ou GIF do projeto)*
+`![Screenshot do Projeto](URL_DA_IMAGEM)`
 
-- **Busca de Usuários:** Pesquisa em tempo real por qualquer username do GitHub.
-- **Perfil Detalhado:** Exibição de informações essenciais como avatar, localização, número de seguidores e seguindo.
-- **Listagem de Repositórios:** Página dedicada para listar os repositórios públicos do usuário selecionado.
-- **Tratamento de Erros:** Implementação de estados de erro para usuários não encontrados (404).
-- **Navegação Fluida:** Uso de rotas dinâmicas para transição entre a busca e a lista de repositórios.
+---
 
-## 🛠️ Instalação e Execução
+### 🚀 Features
 
-### Pré-requisitos
-Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+- **Consumo de API REST**: Integração direta com a API do GitHub utilizando a Fetch API. A escolha por requisições assíncronas garante que a interface não trave durante a busca de dados.
+- **Tipagem Estática**: Implementação de TypeScript para tipar as respostas da API e as props dos componentes, eliminando erros comuns de "undefined" em tempo de execução.
+- **Roteamento Dinâmico**: Uso de `react-router-dom` para gerenciar a navegação. A implementação de rotas parametrizadas (`/repos/:login`) permite que a aplicação identifique qual usuário carregar com base na URL.
+- **Estilização Modular**: Adoção de CSS Modules para garantir que as classes de estilo sejam locais a cada componente, evitando a poluição do escopo global e facilitando a manutenção.
+- **Build Otimizado**: Utilização do Vite para o processo de build e desenvolvimento, proporcionando HMR (Hot Module Replacement) instantâneo e bundles finais mais leves.
 
-### Passo a passo
+---
 
-1. **Clone o repositório:**
+### 🛠 Tecnologias
+
+- **React** ^18.2.0
+- **TypeScript** ^5.2.2
+- **Vite** ^5.2.0
+- **React Router DOM** ^6.23.1
+- **React Icons** ^5.2.1
+
+---
+
+### 💻 Como rodar localmente
+
+Este projeto utiliza o **pnpm** como gerenciador de pacotes.
+
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/github-finder.git
+   git clone https://github.com/wilian-morimoto/github-finder.git
    cd github-finder
    ```
 
-2. **Instale as dependências:**
+2. Instale as dependências:
    ```bash
-   npm install
-   # ou
    pnpm install
    ```
 
-3. **Inicie o servidor de desenvolvimento:**
+3. Inicie o servidor de desenvolvimento:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
-4. **Acesse no navegador:**
-   Abra `http://localhost:5173` (ou a porta indicada no terminal).
+4. Acesse no navegador:
+   `http://localhost:5173`
 
-## 🧠 Decisões Técnicas e Boas Práticas
+---
 
-- **Tipagem Estrita:** Utilização de interfaces TypeScript (`UserProps`) para garantir a consistência dos dados recebidos da API e evitar erros de tempo de execução.
-- **Modularização de Estilos:** Emprego de **CSS Modules** para evitar a colisão de classes globais e manter a manutenibilidade do layout.
-- **Componentização:** Divisão da interface em componentes reutilizáveis (`Search`, `User`, `Error`), promovendo a separação de responsabilidades.
-- **Consumo de API:** Implementação de chamadas assíncronas com `fetch` e tratamento de status de resposta para feedback preciso ao usuário.
-- **Performance:** O uso do Vite garante um *Hot Module Replacement* (HMR) extremamente rápido e builds otimizados.
+### 📁 Estrutura de Pastas
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+```text
+src/
+├── components/  # Componentes de interface reutilizáveis (Search, User, Error)
+├── routes/      # Páginas da aplicação e definição de fluxos (Home, Repos)
+├── types/       # Definições de interfaces e tipos TypeScript
+├── App.tsx      # Componente raiz e configuração de layout
+└── main.tsx     # Ponto de entrada da aplicação
+```
