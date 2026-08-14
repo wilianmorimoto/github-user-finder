@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Search from "../components/Search";
 import { UserProps } from "../types/User";
 import User from "../components/User";
