@@ -1,0 +1,31 @@
+.search {
+  background: #2b3566;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.search p {
+  color: #9da5d1;
+}
+
+.formContainer {
+  display: flex;
+  gap: .5rem;
+}
+
+.formContainer input, .formContainer button {
+  padding: 0.6rem;
+  border-radius: 5px;
+  color: #2b3566;
+}
+
+.formContainer button {
+  background: #0e1129;
+  cursor: pointer;
+}
