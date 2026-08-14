@@ -10,8 +10,9 @@ Busca de perfis e repositórios de usuários do GitHub via API.
 
 ---
 
-### 📸 Screenshot
-`![Screenshot do Projeto](./public/readme.png)`
+<p align="center">
+  <img src="./public/readme.png" alt="Brainwave AI Landing Page Screenshot" width="800">
+</p>
 
 ---
 
