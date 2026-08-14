@@ -6,15 +6,12 @@ Busca de perfis e repositórios de usuários do GitHub via API.
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployed_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-[Ver projeto →]([URL_DO_PROJETO])
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/wilian-morimoto/github-finder)
+[Ver projeto →](https://github-user-finder-lyart.vercel.app/)
 
 ---
 
 ### 📸 Screenshot
-*(Adicione aqui um screenshot ou GIF do projeto)*
-`![Screenshot do Projeto](URL_DA_IMAGEM)`
+`![Screenshot do Projeto](./public/readme.png)`
 
 ---
 
