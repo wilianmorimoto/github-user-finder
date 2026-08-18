@@ -9,11 +9,9 @@ Busca de perfis e repositórios de usuários do GitHub via API.
 [Ver projeto →](https://github-user-finder-lyart.vercel.app/)
 
 ---
-
 <p align="center">
-  <img src="./public/readme.png" alt="Brainwave AI Landing Page Screenshot" width="800">
+  <img src="./public/readme.png" alt="GitHub Finder Screenshot" width="838">
 </p>
-
 ---
 
 ### 🚀 Features
@@ -71,3 +69,5 @@ src/
 ├── App.tsx      # Componente raiz e configuração de layout
 └── main.tsx     # Ponto de entrada da aplicação
 ```
+
+---
