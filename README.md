@@ -9,9 +9,11 @@ Busca de perfis e repositórios de usuários do GitHub via API.
 [Ver projeto →](https://github-user-finder-lyart.vercel.app/)
 
 ---
+
 <p align="center">
   <img src="./public/readme.png" alt="GitHub Finder Screenshot" width="838">
 </p>
+
 ---
 
 ### 🚀 Features
